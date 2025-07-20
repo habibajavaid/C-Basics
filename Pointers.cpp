@@ -19,7 +19,7 @@ int main(){
     cout << *savings2Ptr << endl;
 
     */
-
+/*
     vector<string> courses = {"Chemistry" , "Physics" , "Calculus"};
     vector<string>* courses2Ptr = &courses;          //  (*)  asterik   (&) ampersand.
 
@@ -33,4 +33,38 @@ int main(){
     for(size_t i = 0; i < (*courses2Ptr).size(); i++){
         cout << (*courses2Ptr)[i] << " ";
     }
+
+    */
+
+    int  a = 20;
+    int* ptr = &a;
+
+    cout << ptr  <<endl;
+    cout << *ptr << endl;
+
+
+    int num = 2000;
+    int* ptrnum = &num;
+
+    cout << ptrnum << endl;     //referencing  ...... access to the memeory address.
+    cout << *ptrnum << endl;     //dereferencing ...... accessn to their value.
+
+
+
+
+    vector<string> languages = {"URDU" , "ENGLISH" , "JAPAN" , "HINDI"};
+    vector<string>* languages2ptr = &languages;
+
+    for(size_t i = 0;  i < languages.size(); i++){
+        cout << languages[i] << " ";
+    }
+    cout << endl;
+
+
+    for(size_t i =0; i < (*languages2ptr).size(); i ++){
+        cout << (*languages2ptr)[i] << " ";
+     }
+     cout << endl;
+     
+    cout << languages2ptr << endl;
 }
